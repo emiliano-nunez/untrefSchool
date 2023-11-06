@@ -1,0 +1,103 @@
+@import "../utilities/variables";
+
+.body-form {
+    padding: 1em;
+    margin: 0px;
+    background-color: $verde;
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 10em;
+        padding: 1em;
+        background-color: $naranja;
+        border: 2px solid $oscuro;
+        border-radius: 2em;
+    }
+    section {
+        background-color: $blanco;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10em,1fr));
+        color: $oscuro;
+        justify-content: center;
+        border: 2px solid $oscuro;
+        width: fit-content;
+        margin: 4em auto;
+        border-radius: 3em;
+        padding: 2em;
+        gap: 1em;
+        grid-template: 
+            "title"
+            "image"
+            "text"
+            "form"
+        ;
+        h1 {
+            grid-area: title;
+            padding: .3em;
+            text-align: center;
+            border: 2px solid $oscuro;
+            font-weight: 100;
+            border-radius: 1em;
+        }
+    
+        img {
+            grid-area: image;
+            width: 10em;
+            justify-self: center;
+        }
+
+        p {
+            grid-area: text;
+            margin: 1em 0em;
+        }
+    
+        form {
+            grid-area: form;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(15em,1fr));
+            gap: .5em;
+            input, textarea {
+                background: none;
+                border: none;
+                outline: none;
+                color: $azul;
+                padding: 0.5em;
+                border: 2px solid $oscuro;
+                border-radius: 2em;
+            }
+            input::placeholder {
+                font-family: 'Belanosima', sans-serif;
+                background: none;
+                border: none;
+                outline: none;
+                color: $azul;
+            } 
+            textarea::placeholder {
+                font-family: 'Belanosima', sans-serif;
+                background: none;
+                border: none;
+                outline: none;
+                color: $azul;
+            }
+        }
+
+        .enviar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            width: 10em;
+            padding: .6em;
+            background-color: $naranja;
+            color: $oscuro;
+            border-radius: 2em;
+        }        
+        input[type=submit] {
+            font-family: 'Belanosima', sans-serif;
+            margin: 1em auto;
+
+        }
+    }
+}

@@ -1,0 +1,222 @@
+@import "../utilities/variables";
+
+main {
+    display: grid;
+    width: 100%
+    p {
+        font-family: 'Poppins', sans-serif;
+    }
+    .mural {
+        display: grid;
+        height: 10em;
+        img {
+            width: 100%;
+        }
+    }
+    .icono {
+        width: 10em;
+        margin: auto;
+        padding-bottom: 3em;
+    }
+    .quienesSomos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        padding: 2em;
+        gap: 1em;
+        justify-content: center;
+        background-color: $oscuro;
+        color: $verde;
+        border-bottom: 2px solid $azul;
+        article {
+            width: 28em;
+            border: 2px solid $verde;
+            padding: 1em;
+            border-radius: 1em;
+            justify-self: center;
+        }
+        div {
+            display: grid;
+        }
+        img {
+            align-self: center;
+            justify-self: center;
+            width: 29em;
+            border-radius: 1em;
+            border: 2px solid $verde;
+        }
+        
+    }
+    .elegirnos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+        justify-content: center;
+        align-items: center;
+        padding: 6em 2em;
+        gap: 2em;
+        background-color: $verde;
+        .elegirnos-imagen-fondo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+            color: $oscuro;
+            border-radius: 1em;
+            width: fit-content;
+            border: 2px solid $azul;
+            margin: auto;
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: $verde;
+                border-radius: 1em;
+                opacity: .9;
+                position: absolute;
+                padding: 2em;
+                h2 {
+                    font-size: 1em;
+                }
+            }
+            img {
+                border-radius: 1em;
+                width: 100%;
+            }
+        }
+        ul {
+            display: grid;
+            gap: 1em;
+            li {
+                list-style: none;
+                background-color: $blancoTransparente;
+                padding: 1em;
+                border-radius: 1em;
+                border: 2px solid $azul;
+            }
+        }
+    }
+    .propuesta {
+        text-align: center;
+        padding: 8em 2em;
+        background-color: $azul;
+        font-family: 'Poppins', sans-serif;
+        border-bottom: 2px solid $verde;
+        h2 , h3,h4, ul, li {
+            justify-self: center;
+        }
+        h2, h3{
+            color: $naranja;
+            font-size: 2em;
+        }
+        ul {
+            padding-top: 4em;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 1em;
+            li {
+                display: grid;
+                list-style: none;
+                padding: 1em;
+                
+                background-color: $verde;
+                border: 2px solid $oscuro;
+                border-radius: 1em;
+            }
+        }
+        img {
+            padding-top: 5em;
+        }
+    }
+    .noticias {
+        display: grid;
+        text-align: center;
+        padding: 2em;
+        background-color: $naranja;
+        color: $azul;
+        border-bottom: 2px solid $azul;
+        h2 {
+            font-size: 3em;
+            padding: 1em;
+        }
+        .noticias-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+            text-align: left;
+            gap: 1em;
+            div {
+                display: grid;
+                gap: 0.6em;
+                padding: 1em;
+                border-radius: 1em;
+                border: 2px solid $azul;
+                background-color: $blanco;
+                color: $oscuro;
+                box-shadow: 0px 0px 10px $azul;
+                img, h4, p {
+                    justify-self: center;
+                }
+                h4 {
+                    font-size: 1.6em;
+                }
+                img {
+                    width: 14em;
+                    border-radius: 1em;
+                    border: 2px solid $oscuro;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 580px) {
+        .mural {
+            height: 7em;
+        }
+        .quienesSomos {
+            img {
+                width: 20em;
+            }
+            article {
+                width: 18em;
+            }
+        }   
+        .elegirnos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .elegirnos-imagen-fondo {
+                div {
+                    display: flex;
+                    width: 40%;
+                    height: 13%;
+                    background-color: $blancoTransparente;
+                }
+                img {
+                    width: 22em;
+                }
+            }
+            ul li {
+                width: 20em;
+                margin: auto;
+            }
+        }
+        .propuesta {
+            padding: 4em 0 0 0;
+            ul {
+                display: flex;
+                flex-direction: column;
+                width: 22em;
+                margin: auto;
+
+            }
+        }
+        .noticias {
+            .noticias-container {
+                width: 25em;
+                margin: auto;
+            }
+        }
+    }
+    
+    
+}

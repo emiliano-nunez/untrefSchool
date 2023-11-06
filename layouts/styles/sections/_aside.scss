@@ -1,0 +1,17 @@
+@import "../utilities/variables";
+
+aside {
+    position: fixed;
+    right: 0vw;
+    bottom: 0vh;
+    justify-content: end;
+    align-items: end;
+    a {
+        span {
+            background-color: $blancoTransparente;
+            border-radius: 50%;
+            padding: 1em;
+            margin: 1em;
+        }
+    }
+}

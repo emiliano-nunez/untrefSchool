@@ -1,0 +1,26 @@
+@import "./utilities/_variables.scss";
+@import "../styles/sections/header";
+@import "../styles/sections/aside";
+@import "../styles/sections/main";
+@import "../styles/sections/footer";
+@import "../styles/sections/form";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: $blanco;
+    font-family: 'Belanosima', sans-serif;
+    color: $oscuro;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    
+    color: $oscuro;
+}
