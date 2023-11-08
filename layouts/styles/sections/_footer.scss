@@ -5,10 +5,10 @@ footer {
     background-color: $verde;
     padding: 2em;
     .footer-container{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         text-align: center;
-        align-items: start;
         color: $oscuro;
         h4 {
             font-size: 2em;
